@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+    background-color: red;
+    color: wheat;
+    padding-left: 67px;
+}
+.hero-content h1 {
+    font-size: 50px;
+}
+.img-hero {
+    width: 385px;
+    padding: 50px;
+}
+.circle {
+    text-align: center;
+    cursor: pointer;
+    font-size: 35px;
+}
+.circle .one {
+    color: #ffff62;
+}
+.circle .two {
+    color: #9a9a9a;
+}
+.circle .three {
+    color: #ff748c;
+}
+.circle .four {
+    color: #8989ff;
+}
+
+@media (max-width: 767px) {
+    .hero-content h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero-body {
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-hero {
+        width: 300px;
+        padding-top: 30px;
+    }
+    .hero-p {
+        text-align: center;
+    }
+    .hero-part-one {
+        padding-top: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-content h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+.hello {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#paragraph {
+    width: 500px;
+    font-size: 25px;
+}
+.icon-hello {
+    padding: 20px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    #paragraph {
+        width: 80%;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+.wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.wraper .accordion.active .accordion-title i {
+    transform: rotate(180deg);
+}
+.wraper .accordion.active .acc-content {
+    display: block;
+}
+
+.accordion-container {
+    width: 600px;
+}
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8989ff;
+    padding: 12px 10px;
+}
+.accordion-title i {
+    font-size: 25px;
+    cursor: pointer;
+}
+.acc-content {
+    height: 60px;
+    padding: 12px 10px;
+    font-size: 18px;
+    line-height: 18px;
+    display: none;
+}
+
+
+/* 00 */
+.rating {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 600px;
+    padding: 40px;
+    margin: 12px auto;
+}
+.rating p {
+    color: #FFF;
+}
+.star {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star.active, .star:hover {
+    color: #ffcc00;
+}
